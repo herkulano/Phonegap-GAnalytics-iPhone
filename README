@@ -1,2 +1,7 @@
 Phonegap Google Analytics Plugin
 ===============================
+
+Sample usage in usage.js
+
+You need Google Analytics iPhone SDK installed in your project:
+http://code.google.com/mobile/analytics/docs/iphone/
