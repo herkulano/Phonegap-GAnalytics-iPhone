@@ -15,11 +15,11 @@ static const NSInteger kGANDispatchPeriodSec = 10;
 	[[GANTracker sharedTracker] startTrackerWithAccountID:@"UA-XXXXXXXX-X"
 										   dispatchPeriod:kGANDispatchPeriodSec
 												 delegate:nil];
-	
+
 	return self;
 }
 
-- (void)trackPage:(NSMutableArray*)args 
+- (void)trackPage:(NSMutableArray*)args
 		 withDict:(NSMutableDictionary*)options
 {
 	// URL must start with /
@@ -32,9 +32,9 @@ static const NSInteger kGANDispatchPeriodSec = 10;
 
 }
 
-- (void)trackEvent:(NSMutableArray*)args 
+- (void)trackEvent:(NSMutableArray*)args
 		  withDict:(NSMutableDictionary*)options
-{	
+{
 	NSError *error;
 	if (![[GANTracker sharedTracker] trackEvent:[args objectAtIndex:0]
 										 action:[args objectAtIndex:1]

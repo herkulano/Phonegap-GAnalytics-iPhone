@@ -25,7 +25,7 @@ GAnalytics.prototype.trackEvent = function(category, action, opt_label, opt_valu
 GAnalytics.install = function()
 {
 	if (!window.plugins) {
-		window.plugins = {}; 
+		window.plugins = {};
 	}
 	if (!window.plugins.GA) {
 		window.plugins.GA = new GAnalytics();
